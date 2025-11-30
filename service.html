@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>responsive design</title>
+        <meta name="viewport", content="width=device-width",initial-scale="1.0">
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .left{
+                float:left;
+                width:20%;
+
+
+            }
+            .left a{
+                display:block;
+                padding:9px;
+                background-color:rgb(180, 113, 137);
+                margin-top:7px;
+                color:black;
+                text-align: center;
+            }
+            .right{
+                float:left;
+                width:20%;
+                padding: 12px;
+                background-color:rgb(181, 181, 106);
+                color:black;
+                text-align: center;
+                margin-top: 7px;
+            }
+            .main{
+                float:left;
+                width:60%;
+                padding: 32px;
+                background-color:rgb(136, 138, 107);
+                color:black;
+                text-align: center;
+                margin-top: 7px;
+            }
+            body{
+                margin:0;
+                text-align: center;
+                padding: 10px;
+                display: block;
+                color: black;
+                margin-top: 7px;
+            }
+            @media screen and (max-width:700px){
+                .left,.right,.main{
+                    width:100%;
+                    height:auto;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body style="font-family:Arial,sans-serif">
+        <div style="background-color:rgb(107, 154, 137);padding:15px;text-align:center;">
+            <h1>Responsive Design</h1>
+        </div>
+        <div style="overflow:auto">
+            <div class="left">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="service.html">SERVICES</a>
+            </div>
+            <div class="main">
+                <h2>Main Content</h2>
+                <p>This is the main content area. It will adjust its size based on the screen width.</p>
+            </div>
+             <div class="right">
+                <h2>About</h2>
+                <p>This page is designed to be responsive and adapt to different screen sizes.</p>
+                
+            </div>
+        </div>
+        <div style="background-color:rgb(189, 172, 248);padding:15px;text-align:center;margin-top:7px;">
+            <h2>contact</h2>
+            <p>&copy; 2023 Responsive Design Example</p>
+        </div>
+        <div style="background-color:rgb(130, 88, 126);padding:15px;text-align:center;margin-top:7px;">
+            <h2>service</h2>
+            <p>Follow us on social media</p>
+        </div>
+            
+    </body>
+</html>
